@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-collapsible-layout-demo',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/ember-collapsible-layout-demo',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
