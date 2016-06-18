@@ -310,7 +310,7 @@ define("ember-collapsible-layout-demo/mirage/fixtures/cats", ["exports"], functi
       id: i,
       type: "cats",
       attributes: {
-        url: "/images/cats/" + i + ".jpg",
+        url: "/ember-collapsible-layout-demo/images/cats/" + i + ".jpg",
         title: "Cat #" + i
       }
     });
@@ -354,7 +354,11 @@ define("ember-collapsible-layout-demo/routes/application/cat", ["exports", "embe
   });
 });
 define('ember-collapsible-layout-demo/routes/application', ['exports', 'ember'], function (exports, _ember) {
-  exports['default'] = _ember['default'].Route.extend({});
+  exports['default'] = _ember['default'].Route.extend({
+    beforeModel: function beforeModel() {
+      this.transitionTo('cats');
+    }
+  });
 });
 define("ember-collapsible-layout-demo/routes/cats/cat", ["exports", "ember"], function (exports, _ember) {
   exports["default"] = _ember["default"].Route.extend({
@@ -1754,7 +1758,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("ember-collapsible-layout-demo/app")["default"].create({"name":"ember-collapsible-layout-demo","version":"0.0.0+7e58656a"});
+  require("ember-collapsible-layout-demo/app")["default"].create({"name":"ember-collapsible-layout-demo","version":"0.0.0+6349736c"});
 }
 
 /* jshint ignore:end */
