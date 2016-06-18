@@ -1,0 +1,39 @@
+{{#collapsible-layout as |layout|}}
+
+  {{#collapsible-panel layout=layout
+     config=panels.top }}
+    <h1>Top collapsible panel</h1>
+  {{/collapsible-panel}}
+
+  {{#collapsible-panel layout=layout
+     config=panels.right }}
+    Right panel content
+  {{/collapsible-panel}}
+
+  {{#collapsible-panel layout=layout
+     config=panels.left }}
+    <div class="cats-navigation">
+    {{#each model as |cat| }}
+      {{#link-to "cats.cat" cat }}
+        <img src={{cat.url}}>
+        {{cat.title}}
+      {{/link-to}}
+    {{/each}}
+    </div>
+  {{/collapsible-panel}}
+
+
+
+
+  {{#collapsible-panel layout=layout
+     config=panels.center }}
+    {{outlet}}
+  {{/collapsible-panel}}
+
+
+  {{#collapsible-panel layout=layout
+     config=panels.bottom }}
+    <h2>Bottom collapsible panel</h2>
+  {{/collapsible-panel}}
+
+{{/collapsible-layout}}
