@@ -5,7 +5,7 @@ for(let i = 1; i < 19; i++){
     id: i,
     type: "cats",
     attributes: {
-      url: `/images/cats/${i}.jpg`,
+      url: `/ember-collapsible-layout-demo/images/cats/${i}.jpg`,
       title: `Cat #${i}`
     }
   });
