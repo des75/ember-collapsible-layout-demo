@@ -2,9 +2,9 @@
   overflow: auto;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  left: 0; }
 
 .collapsible-panel-container.collapsed .collapsible-panel-content {
   display: none; }
@@ -48,136 +48,129 @@
     margin-top: -13px;
     height: 52px;
     width: 13px; }
-  .collapsible-panel--top .collapsible-panel {
+  .collapsible-panel--top.collapsed > .collapsible-panel {
+    height: 0 !important; }
+  .collapsible-panel--top.collapsed > .collapsible-panel-controls {
+    height: 0 !important; }
+  .collapsible-panel--top > .collapsible-panel {
     border-bottom: 1px solid #cecece;
     left: 0;
     right: 0;
     top: 0;
     height: 100px; }
-  .collapsible-panel--top.collapsed .collapsible-panel {
-    height: 0 !important; }
-  .collapsible-panel--top.collapsed .collapsible-panel-controls {
-    height: 0 !important; }
-  .collapsible-panel--top .button-collapse-panel {
-    bottom: 0;
-    border-bottom: none;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; }
-  .collapsible-panel--top .button-expand-panel {
-    top: 100%;
-    border-top: none;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px; }
-  .collapsible-panel--top .collapsible-panel-controls {
-    bottom: 0;
-    left: 0;
-    width: 100%; }
-  .collapsible-panel--top.resizeable .collapsible-panel-controls {
+    .collapsible-panel--top > .collapsible-panel > .collapsible-panel-controls {
+      bottom: 0;
+      left: 0;
+      width: 100%; }
+      .collapsible-panel--top > .collapsible-panel > .collapsible-panel-controls .button-collapse-panel {
+        bottom: 0;
+        border-bottom: none;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px; }
+      .collapsible-panel--top > .collapsible-panel > .collapsible-panel-controls .button-expand-panel {
+        top: 100%;
+        border-top: none;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+  .collapsible-panel--top.resizeable > .collapsible-panel > .collapsible-panel-controls {
     background: #cecece;
     cursor: n-resize; }
-    .collapsible-panel--top.resizeable .collapsible-panel-controls:hover {
+    .collapsible-panel--top.resizeable > .collapsible-panel > .collapsible-panel-controls:hover {
       height: 13px; }
-  .collapsible-panel--right .collapsible-panel {
+  .collapsible-panel--right.collapsed > .collapsible-panel {
+    width: 0 !important; }
+  .collapsible-panel--right.collapsed > .collapsible-panel-controls {
+    width: 0 !important; }
+  .collapsible-panel--right > .collapsible-panel {
     right: 0;
     top: 0;
     width: 100px;
     bottom: 0;
     border-left: 1px solid #cecece; }
-  .collapsible-panel--right.collapsed .collapsible-panel {
-    width: 0 !important; }
-  .collapsible-panel--right.collapsed .collapsible-panel-controls {
-    width: 0 !important; }
-  .collapsible-panel--right .button-collapse-panel {
-    left: 0;
-    border-left: none;
-    border-bottom-right-radius: 2px;
-    border-top-right-radius: 2px; }
-  .collapsible-panel--right .button-expand-panel {
-    right: 100%;
-    border-right: none;
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px; }
-  .collapsible-panel--right .collapsible-panel-controls {
-    left: 0;
-    top: 0;
-    height: 100%; }
-  .collapsible-panel--right.resizeable .collapsible-panel-controls {
+    .collapsible-panel--right > .collapsible-panel > .collapsible-panel-controls {
+      left: 0;
+      top: 0;
+      height: 100%; }
+      .collapsible-panel--right > .collapsible-panel > .collapsible-panel-controls .button-collapse-panel {
+        left: 0;
+        border-left: none;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px; }
+      .collapsible-panel--right > .collapsible-panel > .collapsible-panel-controls .button-expand-panel {
+        right: 100%;
+        border-right: none;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px; }
+  .collapsible-panel--right.resizeable > .collapsible-panel > .collapsible-panel-controls {
     background: #cecece;
     cursor: e-resize; }
-    .collapsible-panel--right.resizeable .collapsible-panel-controls:hover {
+    .collapsible-panel--right.resizeable > .collapsible-panel > .collapsible-panel-controls:hover {
       width: 13px; }
-  .collapsible-panel--bottom .collapsible-panel {
+  .collapsible-panel--bottom.collapsed > .collapsible-panel {
+    height: 0 !important; }
+  .collapsible-panel--bottom.collapsed > .collapsible-panel-controls {
+    height: 0 !important; }
+  .collapsible-panel--bottom > .collapsible-panel {
     left: 0;
     right: 0;
     bottom: 0;
     height: 100px;
     border-top: 1px solid #cecece; }
-  .collapsible-panel--bottom.collapsed .collapsible-panel {
-    height: 0 !important; }
-  .collapsible-panel--bottom.collapsed .collapsible-panel-controls {
-    height: 0 !important; }
-  .collapsible-panel--bottom .button-collapse-panel {
-    top: 0;
-    border-top: none;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; }
-  .collapsible-panel--bottom .button-expand-panel {
-    bottom: 100%;
-    border-bottom: none;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px; }
-  .collapsible-panel--bottom .collapsible-panel-controls {
-    top: 0;
-    left: 0;
-    width: 100%; }
-  .collapsible-panel--bottom.resizeable .collapsible-panel-controls {
+    .collapsible-panel--bottom > .collapsible-panel > .collapsible-panel-controls {
+      top: 0;
+      left: 0;
+      width: 100%; }
+      .collapsible-panel--bottom > .collapsible-panel > .collapsible-panel-controls .button-collapse-panel {
+        top: 0;
+        border-top: none;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px; }
+      .collapsible-panel--bottom > .collapsible-panel > .collapsible-panel-controls .button-expand-panel {
+        bottom: 100%;
+        border-bottom: none;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px; }
+  .collapsible-panel--bottom.resizeable > .collapsible-panel > .collapsible-panel-controls {
     background: #cecece;
     cursor: s-resize; }
-    .collapsible-panel--bottom.resizeable .collapsible-panel-controls:hover {
+    .collapsible-panel--bottom.resizeable > .collapsible-panel > .collapsible-panel-controls:hover {
       height: 13px; }
-  .collapsible-panel--left .collapsible-panel {
+  .collapsible-panel--left.collapsed > .collapsible-panel {
+    width: 0 !important; }
+  .collapsible-panel--left.collapsed > .collapsible-panel-controls {
+    width: 0 !important; }
+  .collapsible-panel--left > .collapsible-panel {
     left: 0;
     top: 0;
     width: 100px;
     bottom: 0;
     border-right: 1px solid #cecece; }
-  .collapsible-panel--left.collapsed .collapsible-panel {
-    width: 0 !important; }
-  .collapsible-panel--left.collapsed .collapsible-panel-controls {
-    width: 0 !important; }
-  .collapsible-panel--left .button-collapse-panel {
-    right: 0;
-    border-right: none;
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px; }
-  .collapsible-panel--left .button-expand-panel {
-    left: 100%;
-    border-left: none;
-    border-bottom-right-radius: 2px;
-    border-top-right-radius: 2px; }
-  .collapsible-panel--left .collapsible-panel-controls {
-    right: 0;
-    top: 0;
-    height: 100%; }
-  .collapsible-panel--left.resizeable .collapsible-panel-controls {
+    .collapsible-panel--left > .collapsible-panel > .collapsible-panel-controls {
+      right: 0;
+      top: 0;
+      height: 100%; }
+      .collapsible-panel--left > .collapsible-panel > .collapsible-panel-controls .button-collapse-panel {
+        right: 0;
+        border-right: none;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px; }
+      .collapsible-panel--left > .collapsible-panel > .collapsible-panel-controls .button-expand-panel {
+        left: 100%;
+        border-left: none;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px; }
+  .collapsible-panel--left.resizeable > .collapsible-panel > .collapsible-panel-controls {
     background: #cecece;
     cursor: w-resize; }
-    .collapsible-panel--left.resizeable .collapsible-panel-controls:hover {
+    .collapsible-panel--left.resizeable > .collapsible-panel > .collapsible-panel-controls:hover {
       width: 13px; }
-  .collapsible-panel--center .collapsible-panel {
+  .collapsible-panel--center > .collapsible-panel {
     left: 0;
     top: 0;
     right: 0;
     bottom: 0; }
-  .collapsible-panel--center.collapsed .collapsible-panel {
+  .collapsible-panel--center.collapsed > .collapsible-panel {
     display: none; }
-  .collapsible-panel--center .button-collapse-panel {
-    right: 10px;
-    top: 10px; }
-  .collapsible-panel--center .button-expand-panel {
-    left: 100%;
-    margin-left: 10px;
-    top: 10px; }
 
 .collapsible-layout {
   position: absolute;
@@ -199,12 +192,12 @@
     background: white;
     border-top: 1px solid #cecece; }
   @media (max-width: 999px) {
-    .collapsible-layout .collapsible-panel {
+    .collapsible-layout.responsive-layout .collapsible-panel {
       border: none; }
-      .collapsible-layout .collapsible-panel .button-collapse-panel,
-      .collapsible-layout .collapsible-panel .button-expand-panel {
+      .collapsible-layout.responsive-layout .collapsible-panel .button-collapse-panel,
+      .collapsible-layout.responsive-layout .collapsible-panel .button-expand-panel {
         display: none; }
-      .collapsible-layout .collapsible-panel--top .collapsible-panel, .collapsible-layout .collapsible-panel--bottom .collapsible-panel, .collapsible-layout .collapsible-panel--left .collapsible-panel, .collapsible-layout .collapsible-panel--right .collapsible-panel, .collapsible-layout .collapsible-panel--center .collapsible-panel {
+      .collapsible-layout.responsive-layout .collapsible-panel--top .collapsible-panel, .collapsible-layout.responsive-layout .collapsible-panel--bottom .collapsible-panel, .collapsible-layout.responsive-layout .collapsible-panel--left .collapsible-panel, .collapsible-layout.responsive-layout .collapsible-panel--right .collapsible-panel, .collapsible-layout.responsive-layout .collapsible-panel--center .collapsible-panel {
         top: 0;
         right: 0;
         bottom: 40px !important;
@@ -212,11 +205,11 @@
         overflow: auto;
         width: auto !important;
         height: auto !important; }
-      .collapsible-layout .collapsible-panel--top.collapsed, .collapsible-layout .collapsible-panel--bottom.collapsed, .collapsible-layout .collapsible-panel--left.collapsed, .collapsible-layout .collapsible-panel--right.collapsed, .collapsible-layout .collapsible-panel--center.collapsed {
+      .collapsible-layout.responsive-layout .collapsible-panel--top.collapsed, .collapsible-layout.responsive-layout .collapsible-panel--bottom.collapsed, .collapsible-layout.responsive-layout .collapsible-panel--left.collapsed, .collapsible-layout.responsive-layout .collapsible-panel--right.collapsed, .collapsible-layout.responsive-layout .collapsible-panel--center.collapsed {
         display: none; }
-    .collapsible-layout .collapsible-layout-control-panel {
+    .collapsible-layout.responsive-layout .collapsible-layout-control-panel {
       display: block; }
-    .collapsible-layout .collapsible-panel-controls {
+    .collapsible-layout.responsive-layout .collapsible-panel-controls {
       display: none; } }
 
 body {
